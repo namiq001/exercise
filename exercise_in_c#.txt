@@ -1,0 +1,104 @@
+//Verilmis ededin sade ve ya murekkeb olmasini arasdirin:
+
+	   
+        int num = 59;
+        int i;
+        int cem = 0;
+
+        for (i = 1; i <= num; i++) 
+        {
+            if (num % i == 0)
+                cem++;
+        }
+        
+        if (cem > 2)
+        { 
+            Console.WriteLine(num + " murekkeb ededdir");
+        }
+        else
+        {
+            Console.WriteLine(num + " sade ededir");
+        }
+
+
+
+//verilmis 4 reqemli ededin mertebeleri cemi
+
+
+        int num=1994;
+        int sum=0;
+        int a, b, c, d; 
+        a=(num-num%1000)/1000;
+        b=(num-num%100)/100%10;
+        c=((num-num%10)-(num-num%100))/10;
+        d=num%1000%100%10;
+        
+        Console.WriteLine(a);
+        Console.WriteLine(b);
+        Console.WriteLine(c);
+        Console.WriteLine(d);
+        sum=a+b+c+d;
+        Console.WriteLine(sum);
+
+//Verilmis ededin 2-nin quvveti olub olmadigini arasdirin 
+
+
+	using System;
+ 
+	class GFG 
+	{  
+	    static bool Quvvet(int x)
+	    {
+	        return x != 0 && ((x & (x - 1)) == 0);
+	    }
+ 
+	    public static void Main()
+	    {
+	        Console.WriteLine(Quvvet(31) ? "Yes" : "No");
+ 	       Console.WriteLine(Quvvet(64) ? "Yes" : "No");
+ 	    }
+	}
+
+
+//Verilmis ededin mertebelerin en boyuyun ekrana caixart
+
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int num=324;
+        int a=(num-num%100)/100;
+        int b=(num-num%10)/10%10;
+        int c=num%10;
+        Console.WriteLine(a);
+        Console.WriteLine(b);
+        Console.WriteLine(c);
+        
+        if (a>b)
+        {
+            if (a>c)
+            {
+                Console.WriteLine("boyuk eded : " + a);
+            }
+            
+        }
+        if (b>a)
+        {
+            if (b>c)
+            {
+                Console.WriteLine("boyuk eded : " + b);
+            }
+        }
+        if (c>a)
+        {
+           if (c>b)
+            {
+                Console.WriteLine("boyuk eded : "+ c);
+            }
+        }
+    }
+}
+

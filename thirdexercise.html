@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+//1.Ededin sade ve ya murekkeb olmasini arasdir
+        // var num = 59;
+        // var i;
+        // var cem = 0;
+
+        // for (i = 1; i <= num; i++) 
+        // {
+        //     if (num % i == 0)
+        //         cem++;
+        // }
+        
+        // if (cem > 2)
+        // { 
+        //     console.log(num + " murekkeb ededdir");
+        // }
+        // else
+        // {
+        //     console.log(num + " sade ededir");
+        // }
+
+
+//2.verilmis 4 reqemli ededin mertebeleri cemi
+
+        // var num=1234
+        // sum=0
+        // a=(num-num%1000)/1000;
+        // b=(num-num%100)/100%10
+        // c=((num-num%10)-(num-num%100))/10
+        // d=num%1000%100%10
+        
+        // console.log(a)
+        // console.log(b)
+        // console.log(c)
+        // console.log(d)
+        // sum=a+b+c+d
+        // console.log(sum)
+
+
+
+
+
+        var num =589
+        var a=(num-num%100)/100
+        var b=(num-num%10)/10%10
+        var c=num%100%10
+        console.log(a)
+        console.log(b)
+        console.log(c)
+        if (a>b)
+        {
+            if (a>c)
+            {
+                console.log("boyuk eded : " + a)
+            }
+            
+        }
+        if (b>a)
+        {
+            if (b>c)
+            {
+                console.log("boyuk eded : " + b)
+            }
+        }
+        if (c>a)
+        {
+            if (c>b)
+            {
+                console.log("boyuk eded : " + c)
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
