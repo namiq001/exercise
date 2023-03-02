@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Kiçikdən böyüyə siralanmış array-i böyükdən kiçiyə sıralayan alqoritm. 
+        // let num = [1,2,3,4,5,6,7,8,9]
+
+        // for (let i = 0; i < num.length / 2; i++) 
+        // {
+
+        //     num[num.length - 1 - i] += num[i]
+
+        //     num[i] = num[num.length - 1 - i] - num[i]
+
+        //     num[num.length - 1 - i] -= num[i]
+
+        // }
+
+
+        // console.log(num)
+
+        // Ədəd və rəqəmlərdən ibarət arrayda neçə rəqəm olduğunu ekrana çap edin
+
+        let num = [11,23,4,1234,4,7,9,10]
+        let say = 0
+        for (let i = 0; i < num.length; i++) {
+            if (num[i] > 0 && num[i] < 10) {
+                say++;
+                console.log("10-dan kicik olan: " + num[i])
+            }
+        }
+        console.log(say);
+
+
+
+
+
+    </script>
+</body>
+
+</html>
